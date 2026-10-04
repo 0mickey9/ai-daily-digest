@@ -1,4 +1,4 @@
-from data import *
+from database import employees, activities, projects, relevance_reasons
 from datetime import datetime, timedelta
 
 def days_between(d1, d2):
@@ -26,12 +26,11 @@ def get_top_activities_for_all_employees():
             if employees[em]['id'] == activities[ac]['creator_id']:
                 continue
 
-            created_at = activities[ac]['created_at'].split(' ')[0]
+            created_at = activities[ac]['created_at'].date()
 
-            today = str(datetime.today()).split(' ')[0]
-            diff = days_between(created_at, str(today))
+            today = datetime.today().date()
             reasons = []
-            if diff == 0:
+            if created_at == today:
                 relevance += 2
                 reasons.append(relevance_reasons[0])
 
