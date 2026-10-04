@@ -4,5 +4,5 @@
 
 2026-10-04
 
-- reviewed results of customer activity analysis | score: 5
-- prepared requirements for the next analytics task | score: 5
+- reviewed results of customer activity analysis | score: 7
+- prepared requirements for the next analytics task | score: 7

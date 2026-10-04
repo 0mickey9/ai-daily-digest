@@ -79,6 +79,6 @@ for project in result:
 
 conn.close()
 
-relevance_reasons = ['- recent activity','- same team']
+relevance_reasons = ['- recent activity','- same team', '-relevant project']
 
 import datetime

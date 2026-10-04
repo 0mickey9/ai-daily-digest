@@ -16,7 +16,19 @@ def find_activity_by_id(activity_id):
         if activity['id'] == activity_id:
             return activity
 
+def find_projects_by_id(project_id):
+    for project in projects:
+        if project['id'] == project_id:
+            return project
+
+
 def get_top_activities_for_all_employees():
+
+    project_roles = {
+        'web-service'     : ['backend-developer', 'frontend-developer', 'qa-tester'] ,
+        'data-processing' : ['data-scientist', 'product-manager'] ,
+    }
+
     ranking_results = []
     top3_dic = {}
     for em in range(len(employees)):
@@ -38,6 +50,11 @@ def get_top_activities_for_all_employees():
                 relevance += 3
                 reasons.append(relevance_reasons[1])
 
+            project = find_projects_by_id(activities[ac]['project_id'])
+
+            if employees[em]['role'] in project_roles[project['name']]:
+                relevance += 2
+                reasons.append(relevance_reasons[2])
             ranking_results.append(
                 {
                     'employee_id': employees[em]['id'],
@@ -48,7 +65,8 @@ def get_top_activities_for_all_employees():
             )
 
             if len(top3) < 3:
-                if relevance > 2:
+                if relevance > 0 and not (
+                        len(reasons) == 1 and reasons[0] == relevance_reasons[0]):
                     top3.append(
                         {
                             'activity_id' : activities[ac]['id'],

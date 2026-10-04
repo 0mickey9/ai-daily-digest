@@ -4,6 +4,6 @@
 
 2026-10-04
 
-- updated the navigation menu on the website | score: 5
-- fixed layout problems on mobile screens | score: 3
-- tested the new login functionality | score: 3
+- updated the navigation menu on the website | score: 7
+- fixed layout problems on mobile screens | score: 5
+- tested the new login functionality | score: 5

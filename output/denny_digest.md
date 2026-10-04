@@ -4,6 +4,6 @@
 
 2026-10-04
 
-- improved validation of user registration data | score: 5
-- updated the navigation menu on the website | score: 5
-- fixed layout problems on mobile screens | score: 3
+- improved validation of user registration data | score: 7
+- updated the navigation menu on the website | score: 7
+- fixed layout problems on mobile screens | score: 5
