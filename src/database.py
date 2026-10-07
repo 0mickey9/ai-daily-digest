@@ -82,7 +82,7 @@ conn.close()
 
 relevance_reasons = ['- recent activity','- same team', '-relevant project']
 
-role_desscriptions = {
+role_descriptions = {
     'data-scientist': 'analyzes datasets, customer behavior, metrics and business data',
     'frontend-developer': 'builds user interfaces, layouts, navigation and web pages',
     'backend-developer': 'manages server logic, databases, APIs, authentication and validation',
