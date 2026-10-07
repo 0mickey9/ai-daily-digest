@@ -2,6 +2,7 @@ import os
 import psycopg2
 from dotenv import load_dotenv
 
+
 load_dotenv()
 
 DB_HOST = os.getenv('DB_HOST')
@@ -80,5 +81,20 @@ for project in result:
 conn.close()
 
 relevance_reasons = ['- recent activity','- same team', '-relevant project']
+
+role_desscriptions = {
+    'data-scientist': 'analyzes datasets, customer behavior, metrics and business data',
+    'frontend-developer': 'builds user interfaces, layouts, navigation and web pages',
+    'backend-developer': 'manages server logic, databases, APIs, authentication and validation',
+    'qa-tester': 'tests features, checks functionality, finds bugs and writes tests',
+    'product-manager': 'defines requirements, plans features and aligns user and business needs'
+}
+
+project_roles = {
+    'web-service': ['backend-developer', 'frontend-developer', 'qa-tester'],
+    'data-processing': ['data-scientist', 'product-manager'],
+}
+
+
 
 import datetime

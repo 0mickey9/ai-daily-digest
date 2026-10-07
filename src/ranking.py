@@ -1,5 +1,8 @@
-from database import employees, activities, projects, relevance_reasons
+from src.database import employees, activities, projects, relevance_reasons,role_desscriptions,project_roles
 from datetime import datetime, timedelta
+
+import numpy as np
+
 
 def days_between(d1, d2):
     d1 = datetime.strptime(d1, "%Y-%m-%d")
@@ -21,13 +24,31 @@ def find_projects_by_id(project_id):
         if project['id'] == project_id:
             return project
 
+def transformer(employees_text, activities_text):
+    from sentence_transformers import SentenceTransformer
+    model = SentenceTransformer('all-MiniLM-L6-v2')
 
-def get_top_activities_for_all_employees():
+    role_names = list(employees_text.keys())
+    role_texts = list(employees_text.values())
+    role_embeddings_array = model.encode(role_texts)
 
-    project_roles = {
-        'web-service'     : ['backend-developer', 'frontend-developer', 'qa-tester'] ,
-        'data-processing' : ['data-scientist', 'product-manager'] ,
-    }
+    activities_embeddings = model.encode(activities_text)
+
+    employees_embeddings = dict(zip(role_names, role_embeddings_array))
+    return employees_embeddings, activities_embeddings
+
+def get_semantic_similarity(a,b):
+    dot_product = np.dot(a, b)
+    norm_a = np.linalg.norm(a)
+    norm_b = np.linalg.norm(b)
+
+    similarity = dot_product / (norm_a * norm_b)
+
+    return similarity
+
+def get_top_activities_for_all_employees(i):
+
+    role_embeddings, activities_embeddings = transformer(role_desscriptions,[i['description'] for i in activities])
 
     ranking_results = []
     top3_dic = {}
@@ -42,6 +63,12 @@ def get_top_activities_for_all_employees():
 
             today = datetime.today().date()
             reasons = []
+
+            employee_role = employees[em]['role']
+            cosine = get_semantic_similarity(activities_embeddings[ac] , role_embeddings[employee_role])
+            semantic_score = max(cosine, 0) * 1
+
+
             if created_at == today:
                 relevance += 2
                 reasons.append(relevance_reasons[0])
@@ -55,6 +82,12 @@ def get_top_activities_for_all_employees():
             if employees[em]['role'] in project_roles[project['name']]:
                 relevance += 2
                 reasons.append(relevance_reasons[2])
+
+            if relevance == 0 or (len(reasons) == 1 and reasons[0] == relevance_reasons[0]):
+                continue
+
+            relevance += semantic_score
+
             ranking_results.append(
                 {
                     'employee_id': employees[em]['id'],

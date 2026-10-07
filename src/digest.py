@@ -3,7 +3,7 @@ from data import *
 from datetime import datetime
 from pathlib import Path
 project_root = Path(__file__).parent.parent
-top3 = get_top_activities_for_all_employees()
+
 
 def generate_digest(one_employee,only_his_top3):
     name_of_file = project_root / 'output' / f'{one_employee.lower()}_digest.md'
