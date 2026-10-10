@@ -1,0 +1,161 @@
+employee_id,employee_name,activity_id,relevance,rationale,annotation_status
+2,Bob,11,0,No clear impact on frontend user-facing interfaces is stated.,draft
+3,Carl,11,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+4,Denny,11,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+5,Faride,11,0,"No clear impact on product decisions, onboarding, experience and retention is stated.",draft
+1,Alice,12,0,No clear impact on registration backend and account data is stated.,draft
+2,Bob,12,0,No clear impact on frontend user-facing interfaces is stated.,draft
+3,Carl,12,1,"The update may affect experiment design, analytics, ML and measurement.",draft
+4,Denny,12,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+2,Bob,13,1,The update may affect frontend user-facing interfaces.,draft
+3,Carl,13,1,"The update may affect experiment design, analytics, ML and measurement.",draft
+4,Denny,13,1,The update may affect QA for user-facing functionality and regressions.,draft
+5,Faride,13,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,14,0,No clear impact on registration backend and account data is stated.,draft
+3,Carl,14,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+4,Denny,14,1,The update may affect QA for user-facing functionality and regressions.,draft
+5,Faride,14,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,15,1,The update may affect registration backend and account data.,draft
+2,Bob,15,0,No clear impact on frontend user-facing interfaces is stated.,draft
+3,Carl,15,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+5,Faride,15,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,16,0,No clear impact on registration backend and account data is stated.,draft
+2,Bob,16,0,No clear impact on frontend user-facing interfaces is stated.,draft
+4,Denny,16,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+5,Faride,16,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,17,0,No clear impact on registration backend and account data is stated.,draft
+2,Bob,17,1,The update may affect frontend user-facing interfaces.,draft
+3,Carl,17,1,"The update may affect experiment design, analytics, ML and measurement.",draft
+4,Denny,17,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+2,Bob,18,1,The update may affect frontend user-facing interfaces.,draft
+3,Carl,18,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+4,Denny,18,1,The update may affect QA for user-facing functionality and regressions.,draft
+5,Faride,18,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,19,0,No clear impact on registration backend and account data is stated.,draft
+2,Bob,19,0,No clear impact on frontend user-facing interfaces is stated.,draft
+4,Denny,19,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+5,Faride,19,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,20,0,No clear impact on registration backend and account data is stated.,draft
+3,Carl,20,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+4,Denny,20,1,The update may affect QA for user-facing functionality and regressions.,draft
+5,Faride,20,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+2,Bob,21,0,No clear impact on frontend user-facing interfaces is stated.,draft
+3,Carl,21,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+4,Denny,21,1,The update may affect QA for user-facing functionality and regressions.,draft
+5,Faride,21,0,"No clear impact on product decisions, onboarding, experience and retention is stated.",draft
+1,Alice,22,0,No clear impact on registration backend and account data is stated.,draft
+3,Carl,22,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+4,Denny,22,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+5,Faride,22,0,"No clear impact on product decisions, onboarding, experience and retention is stated.",draft
+1,Alice,23,1,The update may affect registration backend and account data.,draft
+2,Bob,23,1,The update may affect frontend user-facing interfaces.,draft
+3,Carl,23,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+5,Faride,23,0,"No clear impact on product decisions, onboarding, experience and retention is stated.",draft
+1,Alice,24,0,No clear impact on registration backend and account data is stated.,draft
+2,Bob,24,0,No clear impact on frontend user-facing interfaces is stated.,draft
+4,Denny,24,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+5,Faride,24,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,25,1,The update may affect registration backend and account data.,draft
+2,Bob,25,1,The update may affect frontend user-facing interfaces.,draft
+3,Carl,25,1,"The update may affect experiment design, analytics, ML and measurement.",draft
+4,Denny,25,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+2,Bob,26,0,No clear impact on frontend user-facing interfaces is stated.,draft
+3,Carl,26,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+4,Denny,26,1,The update may affect QA for user-facing functionality and regressions.,draft
+5,Faride,26,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,27,0,No clear impact on registration backend and account data is stated.,draft
+3,Carl,27,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+4,Denny,27,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+5,Faride,27,0,"No clear impact on product decisions, onboarding, experience and retention is stated.",draft
+1,Alice,28,1,The update may affect registration backend and account data.,draft
+2,Bob,28,1,The update may affect frontend user-facing interfaces.,draft
+3,Carl,28,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+5,Faride,28,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,29,0,No clear impact on registration backend and account data is stated.,draft
+2,Bob,29,0,No clear impact on frontend user-facing interfaces is stated.,draft
+4,Denny,29,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+5,Faride,29,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,30,0,No clear impact on registration backend and account data is stated.,draft
+2,Bob,30,0,No clear impact on frontend user-facing interfaces is stated.,draft
+3,Carl,30,1,"The update may affect experiment design, analytics, ML and measurement.",draft
+4,Denny,30,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+2,Bob,31,0,No clear impact on frontend user-facing interfaces is stated.,draft
+3,Carl,31,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+4,Denny,31,1,The update may affect QA for user-facing functionality and regressions.,draft
+5,Faride,31,0,"No clear impact on product decisions, onboarding, experience and retention is stated.",draft
+1,Alice,32,0,No clear impact on registration backend and account data is stated.,draft
+3,Carl,32,1,"The update may affect experiment design, analytics, ML and measurement.",draft
+4,Denny,32,1,The update may affect QA for user-facing functionality and regressions.,draft
+5,Faride,32,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,33,1,The update may affect registration backend and account data.,draft
+2,Bob,33,1,The update may affect frontend user-facing interfaces.,draft
+3,Carl,33,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+5,Faride,33,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,34,0,No clear impact on registration backend and account data is stated.,draft
+2,Bob,34,0,No clear impact on frontend user-facing interfaces is stated.,draft
+4,Denny,34,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+5,Faride,34,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,35,1,The update may affect registration backend and account data.,draft
+2,Bob,35,1,The update may affect frontend user-facing interfaces.,draft
+3,Carl,35,1,"The update may affect experiment design, analytics, ML and measurement.",draft
+4,Denny,35,1,The update may affect QA for user-facing functionality and regressions.,draft
+2,Bob,36,0,No clear impact on frontend user-facing interfaces is stated.,draft
+3,Carl,36,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+4,Denny,36,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+5,Faride,36,0,"No clear impact on product decisions, onboarding, experience and retention is stated.",draft
+1,Alice,37,0,No clear impact on registration backend and account data is stated.,draft
+3,Carl,37,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+4,Denny,37,1,The update may affect QA for user-facing functionality and regressions.,draft
+5,Faride,37,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,38,1,The update may affect registration backend and account data.,draft
+2,Bob,38,0,No clear impact on frontend user-facing interfaces is stated.,draft
+3,Carl,38,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+5,Faride,38,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,39,0,No clear impact on registration backend and account data is stated.,draft
+2,Bob,39,0,No clear impact on frontend user-facing interfaces is stated.,draft
+4,Denny,39,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+5,Faride,39,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,40,0,No clear impact on registration backend and account data is stated.,draft
+2,Bob,40,0,No clear impact on frontend user-facing interfaces is stated.,draft
+3,Carl,40,1,"The update may affect experiment design, analytics, ML and measurement.",draft
+4,Denny,40,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+2,Bob,41,1,The update may affect frontend user-facing interfaces.,draft
+3,Carl,41,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+4,Denny,41,1,The update may affect QA for user-facing functionality and regressions.,draft
+5,Faride,41,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,42,0,No clear impact on registration backend and account data is stated.,draft
+3,Carl,42,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+4,Denny,42,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+5,Faride,42,0,"No clear impact on product decisions, onboarding, experience and retention is stated.",draft
+1,Alice,43,0,No clear impact on registration backend and account data is stated.,draft
+2,Bob,43,1,The update may affect frontend user-facing interfaces.,draft
+3,Carl,43,1,"The update may affect experiment design, analytics, ML and measurement.",draft
+5,Faride,43,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,44,0,No clear impact on registration backend and account data is stated.,draft
+2,Bob,44,0,No clear impact on frontend user-facing interfaces is stated.,draft
+4,Denny,44,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+5,Faride,44,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,45,0,No clear impact on registration backend and account data is stated.,draft
+2,Bob,45,1,The update may affect frontend user-facing interfaces.,draft
+3,Carl,45,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+4,Denny,45,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+2,Bob,46,0,No clear impact on frontend user-facing interfaces is stated.,draft
+3,Carl,46,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+4,Denny,46,1,The update may affect QA for user-facing functionality and regressions.,draft
+5,Faride,46,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,47,1,The update may affect registration backend and account data.,draft
+3,Carl,47,0,"No clear impact on experiment design, analytics, ML and measurement is stated.",draft
+4,Denny,47,1,The update may affect QA for user-facing functionality and regressions.,draft
+5,Faride,47,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,48,0,No clear impact on registration backend and account data is stated.,draft
+2,Bob,48,0,No clear impact on frontend user-facing interfaces is stated.,draft
+3,Carl,48,1,"The update may affect experiment design, analytics, ML and measurement.",draft
+5,Faride,48,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,49,0,No clear impact on registration backend and account data is stated.,draft
+2,Bob,49,0,No clear impact on frontend user-facing interfaces is stated.,draft
+4,Denny,49,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
+5,Faride,49,1,"The update may affect product decisions, onboarding, experience and retention.",draft
+1,Alice,50,0,No clear impact on registration backend and account data is stated.,draft
+2,Bob,50,0,No clear impact on frontend user-facing interfaces is stated.,draft
+3,Carl,50,1,"The update may affect experiment design, analytics, ML and measurement.",draft
+4,Denny,50,0,No clear impact on QA for user-facing functionality and regressions is stated.,draft
