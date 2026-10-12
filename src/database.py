@@ -90,6 +90,15 @@ role_descriptions = {
     'product-manager': 'defines requirements, plans features and aligns user and business needs'
 }
 
+
+employee_descriptions = {
+    1: "Maintains user registration services, account creation APIs and registration data integrity.",
+    2: "Builds website interfaces, registration forms, navigation and responsive layouts.",
+    3: "Tests product hypotheses proposed by Faride using ML and statistical analysis, and evaluates experiment results after release.",
+    4: "Tests website functionality, registration and authentication flows, and checks for regressions after changes.",
+    5: "Develops product hypotheses to improve user experience, engagement and retention."
+}
+
 project_roles = {
     'web-service': ['backend-developer', 'frontend-developer', 'qa-tester'],
     'data-processing': ['data-scientist', 'product-manager'],

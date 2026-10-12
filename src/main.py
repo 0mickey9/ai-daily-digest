@@ -1,5 +1,5 @@
 from data import *
-from digest import *
+from src.digest import *
 from random import *
 
 

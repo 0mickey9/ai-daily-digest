@@ -1,4 +1,4 @@
-from src.database import employees, activities, projects, relevance_reasons,role_descriptions,project_roles
+from src.database import employees, activities, projects, relevance_reasons,employee_descriptions,project_roles
 from datetime import datetime
 from sentence_transformers import SentenceTransformer
 
@@ -34,12 +34,13 @@ def create_embeddings(employees_text, activities_text):
 def prepare_activities(test_activities=None):
     current_activities = activities if test_activities is None else test_activities
 
-    role_embeddings, activity_embeddings = create_embeddings(
-        role_descriptions,
+    employee_embeddings, activity_embeddings = create_embeddings(
+        employee_descriptions,
         [activity['description'] for activity in current_activities]
     )
 
-    return current_activities, role_embeddings, activity_embeddings
+    return current_activities, employee_embeddings, activity_embeddings
+
 def get_semantic_similarity(a,b):
     dot_product = np.dot(a, b)
     norm_a = np.linalg.norm(a)
@@ -51,7 +52,7 @@ def get_semantic_similarity(a,b):
 
 
 def get_top_activities_for_all_employees(semantic_weight = 0, reference_date = None,test_activities=None):
-    current_activities, role_embeddings, activity_embeddings = prepare_activities(test_activities)
+    current_activities, employee_embeddings, activity_embeddings = prepare_activities(test_activities)
     today = datetime.today().date() if reference_date is None else reference_date
     top3_dic = {}
     for em in range(len(employees)):
@@ -67,8 +68,8 @@ def get_top_activities_for_all_employees(semantic_weight = 0, reference_date = N
 
             reasons = []
 
-            employee_role = employees[em]['role']
-            cosine = get_semantic_similarity(activity_embeddings[ac] , role_embeddings[employee_role])
+            employee_id = employees[em]['id']
+            cosine = get_semantic_similarity(activity_embeddings[ac] , employee_embeddings[employee_id])
             semantic_score = max(cosine, 0)
 
 

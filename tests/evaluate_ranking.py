@@ -68,7 +68,7 @@ def load_ground_truth(path):
             ground_truth.append(row)
     return ground_truth
 
-ground_truth = load_ground_truth(r'C:\Users\Admin\OneDrive\Desktop\пр пр шкибиди доп\програмування\my ml github projects\ai-daily-digest\tests\ground_truth_draft.csv')
+ground_truth = load_ground_truth(Path(__file__).parent / "ground_truth_draft.csv")
 from src.ranking import find_employee_by_id
 expected_relevance = {
         'Alice': [],
@@ -91,12 +91,12 @@ for weight in [0,1]:
     print(f"\nWeight = {weight}")
 
     for employee, ranked in predictions.items():
-        print(employee)
-        for activity in ranked:
-            print(
-                activity["activity_id"],
-                round(activity["score"], 3)
-            )
+            print(employee)
+            for activity in ranked:
+                print(
+                    activity["activity_id"],
+                    round(activity["score"], 3)
+                )
     for key,value in predictions.items():
         activity_ids = [activity_id['activity_id'] for activity_id in value]
         precision = precision_at_k(activity_ids,expected_relevance[key],k)

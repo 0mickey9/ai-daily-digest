@@ -1,5 +1,5 @@
-from ranking import *
-from data import *
+from src.ranking import *
+from src.data import *
 from datetime import datetime
 from pathlib import Path
 project_root = Path(__file__).parent.parent
