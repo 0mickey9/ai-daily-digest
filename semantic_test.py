@@ -7,7 +7,7 @@
 from sentence_transformers import SentenceTransformer
 import numpy as np
 from src.database import activities
-from src.ranking import find_activity_by_id,find_employee_by_id
+from src.ranking import find_employee_by_id
 from src.database import employees
 
 

@@ -19,6 +19,12 @@ def find_projects_by_id(project_id):
             return project
     raise ValueError('id is not found')
 
+def find_activity_by_id(activity_id):
+    for activity in activities:
+        if activity['id'] == activity_id:
+            return activity
+    raise ValueError('id is not found')
+
 def create_embeddings(employees_text, activities_text):
 
 
@@ -98,7 +104,8 @@ def get_top_activities_for_all_employees(semantic_weight = 0, reference_date = N
                         'activity_id' : current_activities[ac]['id'],
                         'description' : current_activities[ac]['description'],
                         'score'       : relevance,
-                        'reasons'     : reasons
+                        'reasons'     : reasons,
+                        'created_at'  : current_activities[ac]['created_at'].date()
                     }
                 )
             else:
@@ -108,7 +115,8 @@ def get_top_activities_for_all_employees(semantic_weight = 0, reference_date = N
                         'activity_id': current_activities[ac]['id'],
                         'description': current_activities[ac]['description'],
                         'score'      : relevance,
-                        'reasons'    : reasons
+                        'reasons'    : reasons,
+                        'created_at' : current_activities[ac]['created_at'].date()
                     }
 
         top3.sort(key=lambda x: x['score'], reverse=True)
