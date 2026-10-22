@@ -4,7 +4,7 @@ from random import *
 from datetime import date
 
 
-reference_date = date.today()
+reference_date = date(2026, 10, 15)
 top_of = get_top_activities_for_all_employees(semantic_weight = 1,reference_date = reference_date)
 for emp, his_top in top_of.items():
     generate_digest(emp, his_top, reference_date)

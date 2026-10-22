@@ -7,23 +7,11 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 
 import numpy as np
 
-def find_employee_by_id(employee_id):
-    for employee in employees:
-        if employee['id'] == employee_id:
-            return employee
-    raise ValueError('id is not found')
-
-def find_projects_by_id(project_id):
-    for project in projects:
-        if project['id'] == project_id:
-            return project
-    raise ValueError('id is not found')
-
-def find_activity_by_id(activity_id):
-    for activity in activities:
-        if activity['id'] == activity_id:
-            return activity
-    raise ValueError('id is not found')
+def find_dict_by_id(dict,id):
+    for dicts in dict:
+        if dicts['id'] == id:
+            return dicts
+    raise ValueError(f'ID {id} not found')
 
 def create_embeddings(employees_text, activities_text):
 
@@ -57,7 +45,7 @@ def get_semantic_similarity(a,b):
     return similarity
 
 
-def get_top_activities_for_all_employees(semantic_weight = 0, reference_date = None,test_activities=None):
+def get_top_activities_for_all_employees(semantic_weight = 0 , reference_date = None,test_activities=None):
     current_activities, employee_embeddings, activity_embeddings = prepare_activities(test_activities)
     today = datetime.today().date() if reference_date is None else reference_date
     top3_dic = {}
@@ -83,11 +71,11 @@ def get_top_activities_for_all_employees(semantic_weight = 0, reference_date = N
                 relevance += 2
                 reasons.append(relevance_reasons[0])
 
-            if employees[em]['team'] == find_employee_by_id(current_activities[ac]['creator_id'])['team']:
+            if employees[em]['team'] == find_dict_by_id(employees,current_activities[ac]['creator_id'])['team']:
                 relevance += 3
                 reasons.append(relevance_reasons[1])
 
-            project = find_projects_by_id(current_activities[ac]['project_id'])
+            project = find_dict_by_id(projects,current_activities[ac]['project_id'])
 
             if employees[em]['role'] in project_roles[project['name']]:
                 relevance += 2

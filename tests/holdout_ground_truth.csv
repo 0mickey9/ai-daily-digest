@@ -1,0 +1,161 @@
+employee_id,employee_name,activity_id,relevance,rationale,annotation_status
+2,Bob,51,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+3,Carl,51,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+4,Denny,51,1,QA should verify that reused signup verification tokens are correctly rejected.,auto_labeled
+5,Faride,51,0,"No clear impact on Faride’s product decisions, onboarding experience, or retention goals.",auto_labeled
+1,Alice,52,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+3,Carl,52,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+4,Denny,52,1,QA should verify expired-link feedback in the account recovery UI.,auto_labeled
+5,Faride,52,1,Clear account recovery errors can reduce user frustration and abandonment.,auto_labeled_low_confidence
+1,Alice,53,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,53,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+4,Denny,53,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+5,Faride,53,1,Biased onboarding metrics may lead to incorrect product decisions.,auto_labeled
+1,Alice,54,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,54,1,Bob owns frontend accessibility and must address trapped screen-reader focus.,auto_labeled
+3,Carl,54,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+5,Faride,54,1,An inaccessible authentication prompt materially harms user experience.,auto_labeled_low_confidence
+1,Alice,55,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,55,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled_low_confidence
+3,Carl,55,1,Carl is explicitly assigned to measure the proposed signup experiment.,auto_labeled
+4,Denny,55,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+2,Bob,56,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+3,Carl,56,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+4,Denny,56,1,QA should regress account creation and ensure retries cannot duplicate profiles.,auto_labeled
+5,Faride,56,0,"No clear impact on Faride’s product decisions, onboarding experience, or retention goals.",auto_labeled
+1,Alice,57,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+3,Carl,57,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+4,Denny,57,1,QA may need to verify tablet layouts after the UI alignment change.,auto_labeled_low_confidence
+5,Faride,57,0,"No clear impact on Faride’s product decisions, onboarding experience, or retention goals.",auto_labeled
+1,Alice,58,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,58,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+4,Denny,58,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+5,Faride,58,1,The observed null result informs the product retention hypothesis.,auto_labeled
+1,Alice,59,1,Verification links fail in the registration flow owned by Alice.,auto_labeled
+2,Bob,59,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+3,Carl,59,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+5,Faride,59,1,Immediate link expiry may block signups and harm onboarding conversion.,auto_labeled
+1,Alice,60,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,60,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+3,Carl,60,1,Carl is explicitly assigned experiment measurement.,auto_labeled
+4,Denny,60,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+2,Bob,61,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+3,Carl,61,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+4,Denny,61,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+5,Faride,61,0,"No clear impact on Faride’s product decisions, onboarding experience, or retention goals.",auto_labeled
+1,Alice,62,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+3,Carl,62,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+4,Denny,62,1,QA should verify the new signup username warning and existing API behavior.,auto_labeled
+5,Faride,62,1,Username warnings can affect signup friction and user experience.,auto_labeled_low_confidence
+1,Alice,63,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,63,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+4,Denny,63,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+5,Faride,63,1,Contaminated signup conversion metrics may distort product decisions.,auto_labeled
+1,Alice,64,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,64,1,Navigation redesign and keyboard shortcuts are Bob’s frontend responsibilities.,auto_labeled
+3,Carl,64,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+5,Faride,64,0,"No clear impact on Faride’s product decisions, onboarding experience, or retention goals.",auto_labeled
+1,Alice,65,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,65,1,Bob is explicitly assigned implementation of the registration progress UI.,auto_labeled
+3,Carl,65,1,Carl is explicitly assigned measurement of the experiment.,auto_labeled
+4,Denny,65,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled_low_confidence
+2,Bob,66,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+3,Carl,66,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+4,Denny,66,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+5,Faride,66,0,"No clear impact on Faride’s product decisions, onboarding experience, or retention goals.",auto_labeled
+1,Alice,67,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+3,Carl,67,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+4,Denny,67,1,QA may need to test the newly added dark-mode functionality.,auto_labeled_low_confidence
+5,Faride,67,0,"No clear impact on Faride’s product decisions, onboarding experience, or retention goals.",auto_labeled
+1,Alice,68,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,68,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+4,Denny,68,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+5,Faride,68,1,"Early, inconclusive engagement measurements affect rollout decisions.",auto_labeled
+1,Alice,69,1,Signup account enumeration risk involves registration and authentication behavior.,auto_labeled
+2,Bob,69,1,Signup error text is user-facing and may require frontend changes.,auto_labeled_low_confidence
+3,Carl,69,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+5,Faride,69,0,"No clear impact on Faride’s product decisions, onboarding experience, or retention goals.",auto_labeled
+1,Alice,70,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,70,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+3,Carl,70,1,Unexpected alerts can invalidate a notification-frequency experiment and its measurement.,auto_labeled_low_confidence
+4,Denny,70,1,Unexpected repeat alerts indicate a functional regression that QA can investigate.,auto_labeled_low_confidence
+2,Bob,71,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+3,Carl,71,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+4,Denny,71,1,QA should verify password-reset rate limiting and security regression behavior.,auto_labeled
+5,Faride,71,0,"No clear impact on Faride’s product decisions, onboarding experience, or retention goals.",auto_labeled
+1,Alice,72,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+3,Carl,72,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+4,Denny,72,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+5,Faride,72,0,"No clear impact on Faride’s product decisions, onboarding experience, or retention goals.",auto_labeled
+1,Alice,73,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,73,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+4,Denny,73,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+5,Faride,73,1,Unreliable lifetime-value estimates may mislead product priorities.,auto_labeled
+1,Alice,74,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,74,1,Mobile signup crash with larger fonts is a frontend accessibility defect.,auto_labeled
+3,Carl,74,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+5,Faride,74,1,A signup crash directly harms registration conversion and user experience.,auto_labeled_low_confidence
+1,Alice,75,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,75,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+3,Carl,75,1,Carl is explicitly asked to evaluate longer-term retention in the extended control group.,auto_labeled
+4,Denny,75,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+2,Bob,76,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+3,Carl,76,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+4,Denny,76,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+5,Faride,76,0,"No clear impact on Faride’s product decisions, onboarding experience, or retention goals.",auto_labeled
+1,Alice,77,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+3,Carl,77,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+4,Denny,77,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+5,Faride,77,0,"No clear impact on Faride’s product decisions, onboarding experience, or retention goals.",auto_labeled
+1,Alice,78,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,78,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+4,Denny,78,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+5,Faride,78,1,Controlling for traffic source changes interpretation of the onboarding uplift.,auto_labeled
+1,Alice,79,1,Access-token reuse by disabled accounts affects backend account access security.,auto_labeled
+2,Bob,79,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+3,Carl,79,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+5,Faride,79,0,"No clear impact on Faride’s product decisions, onboarding experience, or retention goals.",auto_labeled
+1,Alice,80,1,Alice explicitly owns server-side consent logging.,auto_labeled
+2,Bob,80,1,Bob explicitly owns localized consent UI implementation.,auto_labeled
+3,Carl,80,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+4,Denny,80,1,QA should verify user consent flow and that it records correctly.,auto_labeled
+2,Bob,81,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+3,Carl,81,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+4,Denny,81,1,QA should test account verification under concurrent signup load.,auto_labeled
+5,Faride,81,1,Verification delays during signup can harm onboarding completion.,auto_labeled_low_confidence
+1,Alice,82,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+3,Carl,82,1,Carl’s data team needs the emitted onboarding completion events for analysis.,auto_labeled
+4,Denny,82,1,QA should verify the new guided checklist and event emission.,auto_labeled_low_confidence
+5,Faride,82,1,The new onboarding checklist affects the product onboarding experience.,auto_labeled_low_confidence
+1,Alice,83,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,83,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+4,Denny,83,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+5,Faride,83,1,Poor churn-model calibration matters to retention targeting decisions.,auto_labeled
+1,Alice,84,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,84,1,Bob can fix the mobile profile-picture upload interface.,auto_labeled
+3,Carl,84,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+5,Faride,84,1,A failing mobile profile update can damage the user experience.,auto_labeled_low_confidence
+1,Alice,85,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,85,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+3,Carl,85,1,The recommendation experiment outcome affects Carl’s evaluation and measurements.,auto_labeled
+4,Denny,85,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+2,Bob,86,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+3,Carl,86,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+4,Denny,86,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+5,Faride,86,0,"No clear impact on Faride’s product decisions, onboarding experience, or retention goals.",auto_labeled
+1,Alice,87,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+3,Carl,87,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+4,Denny,87,1,QA should verify the fixed account-security modal on narrow screens.,auto_labeled
+5,Faride,87,0,"No clear impact on Faride’s product decisions, onboarding experience, or retention goals.",auto_labeled
+1,Alice,88,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,88,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+4,Denny,88,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled
+5,Faride,88,1,Broken attribution makes experiment outcomes unreliable for product decisions.,auto_labeled
+1,Alice,89,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,89,1,Safari-specific signup validation failures are directly actionable for frontend.,auto_labeled
+3,Carl,89,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled
+5,Faride,89,1,Browser-specific signup abandonment directly affects onboarding conversion.,auto_labeled_low_confidence
+1,Alice,90,0,"No stated impact on Alice’s registration backend, signup APIs, or account-data integrity.",auto_labeled
+2,Bob,90,0,"No stated frontend ownership, user-interface work, or required action for Bob.",auto_labeled
+3,Carl,90,0,"No stated role for Carl in the experiment measurement, analytics, or ML evaluation.",auto_labeled_low_confidence
+4,Denny,90,0,"No clear QA action, regression risk, or assigned testing responsibility for Denny.",auto_labeled

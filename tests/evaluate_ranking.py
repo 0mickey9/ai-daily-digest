@@ -1,5 +1,6 @@
-from src.ranking import get_top_activities_for_all_employees
+from src.ranking import get_top_activities_for_all_employees,find_dict_by_id
 from datetime import date
+from src.database import employees
 
 
 import math  as m
@@ -52,7 +53,7 @@ def load_test_activities(path):
 
     return activities
 
-csv_path = Path(__file__).parent / "test_activities.csv"
+csv_path = Path(__file__).parent / "holdout_activities.csv"
 test_activities = load_test_activities(csv_path)
 
 
@@ -68,8 +69,7 @@ def load_ground_truth(path):
             ground_truth.append(row)
     return ground_truth
 
-ground_truth = load_ground_truth(Path(__file__).parent / "ground_truth_draft.csv")
-from src.ranking import find_employee_by_id
+ground_truth = load_ground_truth(Path(__file__).parent / "holdout_ground_truth.csv")
 expected_relevance = {
         'Alice': [],
         'Bob': [],
@@ -78,12 +78,12 @@ expected_relevance = {
         'Faride': []}
 for row in ground_truth:
     if row['relevance'] == 1:
-        who = find_employee_by_id(row['employee_id'])['name']
+        who = find_dict_by_id(employees,row['employee_id'])['name']
         expected_relevance[who].append(row['activity_id'])
 
 for weight in [0,1]:
     print(f'Weight {weight} (Rule-based)')
-    predictions = get_top_activities_for_all_employees(semantic_weight=weight,reference_date=date(2026, 10, 4),test_activities=test_activities)
+    predictions = get_top_activities_for_all_employees(semantic_weight=weight,reference_date=date(2026, 10, 15),test_activities=test_activities)
 
     mean_pr = 0
     mean_ndcg = 0

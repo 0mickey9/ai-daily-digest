@@ -2,7 +2,7 @@
 
 ### Daily digest
 
-2026-10-16
+2026-10-15
 
 - found a bug in the registration form | score: 5.352806 date : 2026-10-02
 - tested the new login functionality | score: 5.2791657 date : 2026-10-02
